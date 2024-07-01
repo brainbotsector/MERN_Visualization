@@ -1,0 +1,72 @@
+.gantt-chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Light background color */
+  }
+  
+  .filter-container {
+    margin-bottom: 20px; /* Ensure there's enough space for the filter */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #ffffff; /* White background for better contrast */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .filter-container label {
+    font-size: 16px; /* Larger font size for better readability */
+  }
+  
+  #gantt-chart {
+    width: 100%;
+    max-width: 1200px;
+    height: 700px;
+    background-color: #ffffff; /* White background for better contrast */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  rect {
+    stroke: #fff;
+    stroke-width: 1px;
+  }
+  
+  rect:hover {
+    opacity: 1;
+    stroke: #333;
+    stroke-width: 2px;
+  }
+  
+  .label {
+    fill: #000;
+    font-size: 12px;
+  }
+  
+  .axis text {
+    font-size: 12px; /* Increase axis label font size */
+    fill: #333; /* Axis label color */
+  }
+  
+  .axis path,
+  .axis line {
+    stroke: #ccc; /* Axis line color */
+  }
+  
+  .tooltip {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    position: absolute;
+    pointer-events: none;
+  }
+  

@@ -1,0 +1,15 @@
+.pie-chart {
+  width: 400px;
+  height: 400px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  pointer-events: none;
+}

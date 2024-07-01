@@ -1,0 +1,39 @@
+.main-container {
+  display: flex;
+  height: 100vh;
+}
+
+.content-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.chart-container {
+  width: 90%;
+  max-width: 1300px;
+  margin-bottom: 40px; /* Added margin to separate the charts */
+}
+
+#country-select,
+#pestle-select {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 20px; /* Added margin to separate the headers */
+}
+
+.chart-spacing {
+  margin-top: 40px; /* Added space between the two charts */
+}

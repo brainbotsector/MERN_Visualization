@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.dashboard {
+  text-align: center;
+  padding: 20px;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#bar-chart,
+#pie-chart {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+svg {
+  width: 100%;
+  height: auto;
+}
+
+.tooltip {
+  font-size: 14px;
+  font-weight: bold;
+  fill: #333;
+}
+
+
+
+.dashboard {
+  padding: 20px;
+}
+
+.filter-container {
+  margin-bottom: 20px;
+}
+
+#bar-chart, #pie-chart, #stacked-bar-chart {
+  margin-bottom: 40px;
+}

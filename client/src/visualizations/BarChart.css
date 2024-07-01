@@ -1,0 +1,14 @@
+
+
+   .bar-chart {
+    width: 100%; 
+  }
+  
+  .bar {
+    fill: steelblue; 
+  }
+  
+  .axis text {
+    font-size: 12px; 
+  }
+  
