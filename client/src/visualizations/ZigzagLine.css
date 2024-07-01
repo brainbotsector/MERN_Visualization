@@ -1,0 +1,22 @@
+.chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .filter-container {
+    margin-bottom: 20px;
+  }
+  
+  #parameterFilter {
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  .chart {
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid #ddd;
+  }
+  

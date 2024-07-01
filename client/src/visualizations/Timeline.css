@@ -1,0 +1,23 @@
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .timeline-content {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .timeline-filters {
+    margin-bottom: 20px;
+  }
+  
+  .timeline-chart {
+    width: 100%;
+    height: 400px;
+  }
+  

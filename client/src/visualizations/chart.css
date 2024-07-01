@@ -1,0 +1,24 @@
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  margin: 0 auto; 
+  max-width: 1200px;
+}
+
+.chart-container h2 {
+  margin-bottom: 20px;
+}
+
+.chart-labels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+  margin-top: 20px;
+}
+
+.chart-labels-item {
+  flex-basis: 20%; 
+  text-align: center;
+}

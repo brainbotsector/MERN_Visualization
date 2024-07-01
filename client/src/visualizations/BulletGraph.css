@@ -1,0 +1,49 @@
+/* BulletGraph.css */
+
+.bullet-graph-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.filters label {
+  margin: 0 10px;
+}
+
+.filters select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#bullet-graph {
+  width: 100%;
+  max-width: 1000px;
+  height: 700px;
+}
+
+svg {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+circle {
+  stroke: #fff;
+  stroke-width: 1px;
+}
+
+circle:hover {
+  opacity: 1;
+  stroke: #333;
+  stroke-width: 2px;
+}
