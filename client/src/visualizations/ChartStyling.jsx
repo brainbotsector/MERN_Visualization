@@ -1,10 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { Pie } from 'react-chartjs-2';
+import { Chart, ArcElement, Tooltip, Legend } from 'chart.js';
 import axios from 'axios';
-import Sidenav from '../pages/SideNav'; 
-import '../visualizations/chart.css'; 
+import Sidenav from '../pages/SideNav';
+import Topnav from '../pages/TopNav';
+import '../visualizations/chart.css';
+
+// Register the required components
+Chart.register(ArcElement, Tooltip, Legend);
+
 const PieChart = () => {
-  const [chartData, setChartData] = useState([]);
+  const [chartData, setChartData] = useState(null);
   const [selectedSlice, setSelectedSlice] = useState(null);
 
   useEffect(() => {
@@ -57,27 +63,28 @@ const PieChart = () => {
 
   return (
     <div className="chart-container">
-      
       <Sidenav /> 
       <h2>Pie Chart of Topics Distribution</h2>
       <div style={{ width: '900px', height: '0px' }}>
-        <Pie
-          data={chartData}
-          options={{
-            responsive: true,
-            plugins: {
-              legend: {
-                position: 'top',
-              },
-              tooltip: {
-                callbacks: {
-                  label: (tooltipItem) => `${tooltipItem.label}: ${tooltipItem.raw}`,
+        {chartData && (
+          <Pie
+            data={chartData}
+            options={{
+              responsive: true,
+              plugins: {
+                legend: {
+                  position: 'top',
+                },
+                tooltip: {
+                  callbacks: {
+                    label: (tooltipItem) => `${tooltipItem.label}: ${tooltipItem.raw}`,
+                  },
                 },
               },
-            },
-          }}
-          onElementsClick={handleSliceClick}
-        />
+            }}
+            onElementsClick={handleSliceClick}
+          />
+        )}
       </div>
     </div>
   );
