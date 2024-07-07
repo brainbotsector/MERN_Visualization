@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { Bar } from 'react-chartjs-2';
+import { Chart, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 import axios from 'axios';
 import '../pages/Sidenav.css';
 import '../pages/Topnav.css';
 import Sidenav from '../pages/SideNav';
-import Topnav from '../pages/TopNav';
 import '../visualizations/Stacked.css';
 
+// Register the required components
+Chart.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 const StackedBarChart = () => {
   const [chartData, setChartData] = useState({});
