@@ -24,7 +24,7 @@ const App = () => {
         <Route path="/zigzag" element={<ZigZagLine/>} />
         <Route path="/timegrid" element={<Timeline/>} />
         <Route path="/stackedchart" element={<Stackedbar/>} />
-        <Route path="/piechart" element={<ChartStyling/>} />
+        <Route path="/chart" element={<ChartStyling/>} />
       </Routes>
     </Router>
   );
